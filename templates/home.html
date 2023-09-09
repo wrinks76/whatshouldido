@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatshouldido</title>
+</head>
+    <header class="navbar">
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Recent</a>
+            </li>
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Calendar</a>
+            </li>
+        </ul>
+    </header>
+<body>
+    <main>
+        <h1>What should I study?</h1><br>
+        <h2>What do you want to study?</h2>
+        <form action="" method="get" class="form-study-time">
+            <div class="form-study-time">
+                <! - Switch to radio button? -!> 
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+        <div class="form-study-time">
+            <label for="study-time">Enter the time you have to study in minutes: </label>
+            <input type="number" name="study-time" min="1" max="999" required />
+        </div>
+        <div class="form-study-time">
+            <input type="submit" value="Subscribe!" />
+        </div>
+        </form>
+    </main>
+</body>
+</html>
