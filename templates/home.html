@@ -7,33 +7,35 @@
     <title>whatshouldido</title>
 </head>
     <header class="navbar">
-        <ul class="navbar__navigation">
+        <!--<ul class="navbar__navigation">
             <li class="navbar__navigation-item">
                 <a href="#" class="navbar__link">Recent</a>
             </li>
             <li class="navbar__navigation-item">
                 <a href="#" class="navbar__link">Calendar</a>
             </li>
-        </ul>
+        </ul> -->
     </header>
 <body>
     <main>
         <h1>What should I study?</h1><br>
         <h2>What do you want to study?</h2>
-        <form action="" method="get" class="form-study-time">
-            <div class="form-study-time">
-                <! - Switch to radio button? -!> 
-                <label for="name">Enter your name: </label>
+        <form action=/results method=post class="form-study-time" id="form-study-time">
+            <!--<div class="form-study-time">
+                 Switch to radio button?  
+                <label for="name">Access to Keyboard? </label>
                 <input type="text" name="name" id="name" required />
-            </div>
+            </div> -->
         <div class="form-study-time">
             <label for="study-time">Enter the time you have to study in minutes: </label>
-            <input type="number" name="study-time" min="1" max="999" required />
+            <input type="number" name="time-mins" min="1" max="999" required />
         </div>
         <div class="form-study-time">
-            <input type="submit" value="Subscribe!" />
+            <input type="submit" value="Submit!" />
         </div>
         </form>
+        {% block content %}
+        {% endblock %}
     </main>
 </body>
 </html>
